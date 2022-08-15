@@ -1,0 +1,33 @@
+.buttons-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 20px 0;
+  button{
+    cursor: pointer;
+    &.btn{
+        border: 1px solid var(--clr-blue-100);
+        padding: 10px 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--clr-blue-100);
+        border-radius: 5px;
+        background: transparent;
+    }
+    &.radial-btn{
+        border: 2px solid var(--clr-blue-100);
+        background: var(--clr-main-100);
+        padding: 6px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        color: var(--clr-blue-100);
+    }
+    &.link-btn{
+        background: transparent;
+        border: none;
+    }  
+  }
+}

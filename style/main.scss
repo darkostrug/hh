@@ -6,6 +6,14 @@
 
 @import "../pages/home";
 @import "../pages/list";
+@import "../pages/team";
+@import "../pages/item";
+@import "../pages/city-details";
+
+@import "../components/modal-apartment-block";
+@import "../components/apartment-card";
+@import "../components/buttons";
+@import "../components/faq";
 
 *,
 *::before,
@@ -62,5 +70,20 @@ video {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+main {
+  > section {
+    padding: 72px 0 0;
+    &:last-of-type {
+      margin-bottom: 72px;
+    }
+    @media (max-width: map-get($breakpoints, "md")){
+      padding: 30px 0 0;
+      &:last-of-type {
+        margin-bottom: 30px;
+      }
+    }
   }
 }

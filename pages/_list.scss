@@ -1,65 +1,6 @@
 .list-section {
-  padding: 72px 0;
   .list-container {
     position: relative;
-  }
-  .list-card {
-    position: relative;
-    .img-container {
-      margin-bottom: 10px;
-      img {
-        border-radius: 15px;
-      }
-      .labels {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        text-transform: uppercase;
-        color: var(--clr-main-100);
-        letter-spacing: 0.91;
-        background-color: var(--clr-orange);
-        padding: 3px 15px;
-        border-radius: 10px;
-      }
-      .icon {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        background-color: var(--clr-main-100);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    }
-    .card-details {
-      .details {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        opacity: 0.6;
-        .separator-dot {
-          width: 3px;
-          height: 3px;
-          border-radius: 50%;
-          background-color: var(--clr-main-500);
-        }
-      }
-    }
-    .card-price-details {
-      display: flex;
-      align-items: flex-end;
-      gap: 24px;
-      margin-top: 20px;
-      p {
-        line-height: 5px;
-      }
-      .label {
-        opacity: 0.6;
-      }
-    }
   }
   .show-map-btn {
     display: flex;

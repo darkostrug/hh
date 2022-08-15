@@ -19,16 +19,16 @@
   font-size: 0.688rem;
 }
 .fs-300 {
-  font-size: 0.75rem;
+  font-size: 0.75rem; //12px
 }
 .fs-400 {
-  font-size: 0.875rem;
+  font-size: 0.875rem; //14px
 }
 .fs-500 {
   font-size: 1rem;
 }
 .fs-600 {
-  font-size: 1.125rem;
+  font-size: 1.125rem; //18px
 }
 .fs-700 {
   font-size: 1.188rem;
@@ -82,7 +82,9 @@
 .mb-200 {
   margin-bottom: 20px;
 }
-
 .strong {
   color: var(--clr-blue-100);
+}
+.light-txt {
+  opacity: 0.6;
 }
