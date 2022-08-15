@@ -808,6 +808,18 @@ main.team {
     --image-size: 250px;
   }
 }
+main.team .first-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+@media only screen and (max-width: 480px) {
+  main.team .first-row {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
 main.team .team-header {
   position: relative;
   background: url(../assets/img/team-hero.jpg) no-repeat center;
