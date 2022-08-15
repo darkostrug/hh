@@ -10,6 +10,7 @@
   --clr-red: #ff0000;
   --clr-blue-100: #04a1d9;
   --clr-blue-200: #003580;
+  --clr-green-100: #00a75f;
   --clr-gradient-100: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
   --clr-gradient-200: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
   --clr-gradient-300: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
@@ -122,6 +123,12 @@
 
 .light-txt {
   opacity: 0.6;
+}
+
+.separation-line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--clr-main-300);
 }
 
 .container {
@@ -596,50 +603,6 @@ nav > div ul {
   margin-top: 10px;
 }
 
-.rating .rating-resoult {
-  display: flex;
-  align-items: center;
-}
-.rating .rating-resoult .heart-icon i {
-  font-size: 30px;
-  color: var(--clr-red);
-  margin-right: 20px;
-}
-.rating .rating-client {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-.rating .rating-client .client-img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: url(../assets/img/client.png) no-repeat center;
-  background-size: cover;
-  margin-right: 10px;
-  position: relative;
-}
-.rating .rating-client .client-img .marker {
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--clr-red);
-  border: 2px solid var(--clr-main-100);
-  bottom: -3px;
-  right: -3px;
-}
-.rating .rating-client .client-img .marker i {
-  color: var(--clr-main-100);
-  font-size: 14px;
-}
-.rating .rating-comment p {
-  margin-bottom: 5px;
-}
-
 .unknown-section .card .icon {
   font-size: 28px;
   margin-bottom: 30px;
@@ -847,48 +810,6 @@ main.team .our-team .team-member h3 {
   padding: 72px 0;
 }
 
-main.city-details .city-details-header {
-  position: relative;
-  background: url(../assets/img/geneva.png) no-repeat center;
-  background-size: cover;
-  height: 650px;
-  margin-bottom: 0;
-}
-@media (max-width: 720px) {
-  main.city-details .city-details-header {
-    height: 380px;
-  }
-}
-main.city-details .city-details-header::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
-  opacity: 0.4;
-  position: absolute;
-  inset: 0;
-}
-main.city-details .city-details-header .city-details-hero-container {
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-main.city-details .city-details-header .city-details-hero-container h1 {
-  color: var(--clr-main-100);
-  z-index: 1;
-  font-size: 100px;
-  margin-bottom: 8rem;
-}
-@media (max-width: 720px) {
-  main.city-details .city-details-header .city-details-hero-container h1 {
-    font-size: 40px;
-  }
-}
-main.city-details .city-details-description p {
-  line-height: 30px;
-  text-align: center;
-}
 main .top-sights .sight-card {
   box-shadow: 0px 3px 10px rgba(160, 165, 170, 0.3);
   border-radius: 15px;
@@ -962,6 +883,96 @@ main .more-cities-in-country .country-card:before {
   border-radius: 15px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
   opacity: 0.6;
+}
+
+.city-details-header {
+  position: relative;
+  background: url(../assets/img/geneva.png) no-repeat center;
+  background-size: cover;
+  height: 650px;
+  margin-bottom: 0;
+}
+@media (max-width: 720px) {
+  .city-details-header {
+    height: 380px;
+  }
+}
+.city-details-header::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  opacity: 0.4;
+  position: absolute;
+  inset: 0;
+}
+.city-details-header .city-details-hero-container {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.city-details-header .city-details-hero-container h1 {
+  color: var(--clr-main-100);
+  z-index: 1;
+  font-size: 100px;
+  margin-bottom: 8rem;
+}
+@media (max-width: 720px) {
+  .city-details-header .city-details-hero-container h1 {
+    font-size: 40px;
+  }
+}
+
+.city-details-description p {
+  line-height: 30px;
+  text-align: center;
+}
+
+main.apartment .rating-commands {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+@media (max-width: 480px) {
+  main.apartment .rating-commands {
+    flex-direction: column-reverse;
+  }
+  main.apartment .rating-commands button {
+    margin-top: 35px;
+  }
+}
+main.apartment .location-on-map .map-wrapper {
+  max-height: 400px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+main.apartment .location-on-map .map-wrapper img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+main.apartment .surrounding-container > div {
+  display: flex;
+}
+main.apartment .surrounding-container > div:not(:first-child) {
+  margin-top: 40px;
+}
+main.apartment .surrounding-container > div .icon {
+  margin-right: 30px;
+}
+main.apartment .surrounding-container > div .description-details p {
+  margin-top: 20px;
+  line-height: 24px;
+}
+main.apartment .booking-request-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 .test-bg {
@@ -1079,6 +1090,37 @@ main .more-cities-in-country .country-card:before {
   padding: 3px 15px;
   border-radius: 10px;
 }
+.apartment-card-wrapp .apartment-card .img-container .labels.available-soon-label {
+  background-color: var(--clr-main-100);
+  color: var(--clr-green-100);
+  font-size: 11px;
+  font-weight: 900;
+  padding: 7px 15px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1;
+}
+.apartment-card-wrapp .apartment-card .img-container .labels.available-soon-label:before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: var(--clr-green-100);
+  display: block;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.apartment-card-wrapp .apartment-card .img-container .labels.available-soon-label::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  display: block;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 1px solid var(--clr-green-100);
+  left: 12px;
+}
 .apartment-card-wrapp .apartment-card .img-container .icon {
   position: absolute;
   top: 10px;
@@ -1125,10 +1167,11 @@ main .more-cities-in-country .country-card:before {
   gap: 30px;
   margin: 20px 0;
 }
-.buttons-container button {
+
+button {
   cursor: pointer;
 }
-.buttons-container button.btn {
+button.btn {
   border: 1px solid var(--clr-blue-100);
   padding: 10px 60px;
   display: flex;
@@ -1138,7 +1181,7 @@ main .more-cities-in-country .country-card:before {
   border-radius: 5px;
   background: transparent;
 }
-.buttons-container button.radial-btn {
+button.radial-btn {
   border: 2px solid var(--clr-blue-100);
   background: var(--clr-main-100);
   padding: 6px 20px;
@@ -1148,9 +1191,23 @@ main .more-cities-in-country .country-card:before {
   border-radius: 20px;
   color: var(--clr-blue-100);
 }
-.buttons-container button.link-btn {
+button.link-btn {
   background: transparent;
   border: none;
+}
+button.black-btn {
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(160, 165, 170, 0.3);
+  background-color: var(--clr-main-500);
+  color: var(--clr-main-100);
+  padding: 10px 45px;
+}
+button.booking-btn {
+  background-color: var(--clr-blue-100);
+  border-radius: 10px;
+  color: var(--clr-main-100);
+  border: none;
+  padding: 10px 70px;
 }
 
 .faq-section .faq-card {
@@ -1166,7 +1223,8 @@ main .more-cities-in-country .country-card:before {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 48px;
+  padding: 15px 30px;
+  border-radius: 15px;
 }
 .faq-section .faq-card .faq-card-body {
   display: none;
@@ -1260,6 +1318,52 @@ footer a {
 }
 footer .border {
   border-top: 1px solid var(--clr-main-300);
+}
+
+.rating-resoult {
+  display: flex;
+  align-items: center;
+}
+.rating-resoult .heart-icon i {
+  font-size: 30px;
+  color: var(--clr-red);
+  margin-right: 20px;
+}
+
+.rating-client {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.rating-client .client-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: url(../assets/img/client.png) no-repeat center;
+  background-size: cover;
+  margin-right: 10px;
+  position: relative;
+}
+.rating-client .client-img .marker {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-red);
+  border: 2px solid var(--clr-main-100);
+  bottom: -3px;
+  right: -3px;
+}
+.rating-client .client-img .marker i {
+  color: var(--clr-main-100);
+  font-size: 14px;
+}
+
+.rating-comment p {
+  margin-bottom: 5px;
 }
 
 *,

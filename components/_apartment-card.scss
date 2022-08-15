@@ -10,7 +10,7 @@
         max-height: 200px;
         border-radius: 15px;
         object-fit: cover;
-        &.small-img{
+        &.small-img {
           max-height: 155px;
         }
       }
@@ -24,6 +24,37 @@
         background-color: var(--clr-orange);
         padding: 3px 15px;
         border-radius: 10px;
+        &.available-soon-label {
+          background-color: var(--clr-main-100);
+          color: var(--clr-green-100);
+          font-size: 11px;
+          font-weight: 900;
+          padding: 7px 15px;
+          border-radius: 15px;
+          display: flex;
+          align-items: center;
+          letter-spacing: 1;
+          &:before {
+            content: "";
+            width: 9px;
+            height: 9px;
+            background: var(--clr-green-100);
+            display: block;
+            margin-right: 10px;
+            border-radius: 50%;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            display: block;
+            margin-right: 10px;
+            border-radius: 50%;
+            border: 1px solid var(--clr-green-100);
+            left: 12px;
+          }
+        }
       }
       .icon {
         position: absolute;
