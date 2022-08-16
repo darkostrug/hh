@@ -187,6 +187,15 @@
   margin-right: -30px;
 }
 
+.gap-4 > * {
+  padding: 2px;
+}
+
+.gap-4 {
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
 .justify-flex-start {
   justify-content: flex-start;
 }
@@ -937,6 +946,30 @@ main .more-cities-in-country .country-card:before {
   text-align: center;
 }
 
+main.apartment .booking-card-container {
+  background-color: rgba(4, 160, 217, 0.255);
+  padding: 5px;
+  border-radius: 5px;
+  gap: 3px;
+}
+@media (max-width: 960px) {
+  main.apartment .booking-card-container {
+    gap: 0;
+  }
+}
+@media (max-width: 480px) {
+  main.apartment .booking-card-container {
+    display: none;
+  }
+}
+main.apartment .payment-methods-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main.apartment .payment-methods-container p {
+  margin: 20px 0 10px;
+}
 main.apartment .apartment-introduction .apartment-title {
   display: flex;
   align-items: center;
@@ -1513,6 +1546,9 @@ button.booking-btn {
   border: none;
   padding: 10px 70px;
 }
+button.booking-btn.full-size {
+  width: 100%;
+}
 button.border-btn {
   border: 1px solid var(--clr-blue-100);
   color: var(--clr-blue-100);
@@ -1687,15 +1723,77 @@ footer .border {
   bottom: 0;
   left: 0;
   width: 100%;
-  min-height: 138px;
+  min-height: 150px;
   box-shadow: 0px -3px 10px rgba(160, 165, 170, 0.3);
   background-color: var(--clr-main-100);
   z-index: 999;
+  padding: 10px;
 }
 @media (max-width: 480px) {
   .mobile-booking-wrapp {
     display: initial;
   }
+}
+.mobile-booking-wrapp .mobile-booking-headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobile-booking-wrapp .price-mobile {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.mobile-booking-wrapp .price-mobile .price {
+  line-height: 1;
+}
+.mobile-booking-wrapp .price-mobile button {
+  flex-basis: 50%;
+  padding: 15px 20px;
+}
+
+.booking-card {
+  background-color: var(--clr-main-100);
+  padding: 20px;
+  border-radius: 5px;
+}
+.booking-card .price {
+  margin: 30px 0 10px;
+}
+.booking-card .booking-price-details {
+  margin-bottom: 25px;
+}
+.booking-card .booking-price-details p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 0;
+}
+.booking-card .total-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.booking-card .civil-liability {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.booking-card .civil-liability span {
+  display: flex;
+  align-items: center;
+}
+.booking-card .civil-liability .icon {
+  width: 16px;
+  height: 16px;
+  justify-content: center;
+  background-color: rgba(4, 160, 217, 0.2);
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-bottom: 2px;
 }
 
 *,

@@ -43,6 +43,9 @@ button {
     color: var(--clr-main-100);
     border: none;
     padding: 10px 70px;
+    &.full-size{
+      width: 100%;
+    }
   }
   &.border-btn{
     border: 1px solid var(--clr-blue-100);
