@@ -32,4 +32,9 @@ footer {
   .border {
     border-top: 1px solid var(--clr-main-300);
   }
+  &.scroll-offset {
+    @media (max-width: map-get($breakpoints, "sm")) {
+      padding-bottom: 138px;
+    }
+  }
 }

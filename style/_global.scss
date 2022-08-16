@@ -63,6 +63,8 @@
   color: var(--clr-blue-100);
   text-decoration: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
   &:hover {
     color: var(--clr-blue-200);
   }
@@ -72,6 +74,9 @@
   cursor: pointer;
   &:hover {
     color: var(--clr-blue-200);
+  }
+  &.black{
+    color: var(--clr-main-500);
   }
 }
 
