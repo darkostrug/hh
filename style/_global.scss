@@ -68,6 +68,9 @@
   &:hover {
     color: var(--clr-blue-200);
   }
+  &.black{
+    color: var(--clr-main-500);
+  }
 }
 .link-underline {
   color: var(--clr-blue-100);

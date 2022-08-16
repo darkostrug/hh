@@ -102,6 +102,9 @@
 .link:hover {
   color: var(--clr-blue-200);
 }
+.link.black {
+  color: var(--clr-main-500);
+}
 
 .link-underline {
   color: var(--clr-blue-100);
@@ -1199,6 +1202,83 @@ main.apartment .apartment-offers .offer-card.offer-contanct-card .offer-icon {
   background-color: var(--clr-blue-100);
 }
 
+.contact-form .form-field {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form .form-field:not(:first-child) {
+  margin-top: 15px;
+}
+.contact-form .form-field input,
+.contact-form .form-field select {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid var(--clr-main-400);
+  outline: none;
+  -webkit-appearance: none;
+}
+.contact-form .form-field label {
+  margin-bottom: 7px;
+}
+.contact-form .form-field textarea {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid var(--clr-main-400);
+  outline: none;
+  resize: none;
+  min-height: 200px;
+}
+.contact-form .submit-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.contact-form .submit-container .checkbox-field {
+  display: flex;
+  gap: 5px;
+}
+.contact-form .submit-container .checkbox-field span {
+  display: flex;
+  gap: 5px;
+}
+.contact-form .contact-number {
+  margin-top: 7px;
+  margin-bottom: 30px;
+}
+.contact-form .social-media-contact {
+  margin-bottom: 30px;
+}
+.contact-form .social-media-contact a {
+  display: flex;
+  gap: 10px;
+  padding: 4px 0;
+}
+.contact-form .social-media-contact a i {
+  font-size: 25px;
+}
+.contact-form .map-contact-container .map-contact img {
+  width: 100%;
+  aspect-ratio: 16/8;
+}
+
+@media (max-width: 960px) {
+  .direct-contact {
+    display: flex;
+    gap: 60px;
+  }
+}
+@media (max-width: 960px) and (max-width: 960px) {
+  .direct-contact {
+    flex-direction: column;
+  }
+}
+@media (max-width: 960px) {
+  .direct-contact .map-contact-container {
+    display: none;
+  }
+}
+
 .test-bg {
   background-color: #202020;
   padding: 25px;
@@ -1295,7 +1375,7 @@ main.apartment .apartment-offers .offer-card.offer-contanct-card .offer-icon {
 }
 .apartment-card-wrapp .apartment-card .img-container img {
   width: 100%;
-  max-height: 200px;
+  aspect-ratio: 16/9;
   border-radius: 15px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1500,7 +1580,6 @@ button.border-btn {
 }
 
 header {
-  margin-bottom: 100px;
   width: 100%;
   min-height: 512px;
   background: url(../assets/img/hero.png) no-repeat center;
