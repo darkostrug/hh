@@ -509,6 +509,18 @@
 .our-cities .city-card .apartments-details {
   margin-top: 10px;
 }
+.our-cities .country {
+  display: flex;
+  align-items: center;
+  line-height: initial;
+}
+.our-cities .country .country-flag {
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 7px;
+}
 
 .category {
   background-color: var(--clr-main-200);
@@ -1604,14 +1616,14 @@ button.border-btn {
   display: block;
 }
 
-header {
+header.main-header {
   width: 100%;
-  min-height: 512px;
+  height: 512px;
   background: url(../assets/img/hero.png) no-repeat center;
   background-size: cover;
   position: relative;
 }
-header::after {
+header.main-header::after {
   content: "";
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
   width: 100%;
@@ -1619,6 +1631,22 @@ header::after {
   position: absolute;
   inset: 0;
   opacity: 0.6;
+}
+header.main-header > div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  z-index: 1;
+}
+header.main-header .hero-title {
+  color: var(--clr-main-100);
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  width: 70%;
+  line-height: 1;
 }
 
 footer {
@@ -1917,6 +1945,56 @@ nav .mobile-navigation-wrapp .sm-m-select .sm-container .sm .sm-icon {
   border: 1px solid var(--clr-blue-100);
   border-radius: 50%;
   margin-bottom: 5px;
+}
+
+.filter-box {
+  background-color: var(--clr-main-100);
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  height: 90px;
+  border-radius: 45px;
+  margin-top: 40px;
+}
+.filter-box .city-search,
+.filter-box .date-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  min-width: 320px;
+  border-right: 1px solid var(--clr-main-400);
+}
+.filter-box .search-box-labels {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.filter-box .light {
+  opacity: 0.5;
+}
+.filter-box .fs-icon {
+  color: var(--clr-blue-100);
+}
+.filter-box .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
+  aspect-ratio: 1/1;
+  background-color: var(--clr-blue-100);
+  border-radius: 50%;
+  position: relative;
+  right: -23px;
+  color: var(--clr-main-100);
+}
+.filter-box .search i {
+  font-size: 40px;
+}
+@media (max-width: 960px) {
+  .filter-box {
+    display: none;
+  }
 }
 
 *,

@@ -1,16 +1,34 @@
 header {
-  width: 100%;
-  min-height: 512px;
-  background: url(../assets/img/hero.png) no-repeat center;
-  background-size: cover;
-  position: relative;
-  &::after {
-    content: "";
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  &.main-header {
     width: 100%;
-    height: 100%;
-    position: absolute;
-    inset: 0;
-    opacity: 0.6;
+    height: 512px;
+    background: url(../assets/img/hero.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+    &::after {
+      content: "";
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      inset: 0;
+      opacity: 0.6;
+    }
+    > div {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      text-align: center;
+      z-index: 1;
+    }
+    .hero-title{
+      color: var(--clr-main-100);
+      text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+      width: 70%;
+      line-height: 1;
+    }
   }
 }

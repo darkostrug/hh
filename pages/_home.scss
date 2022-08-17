@@ -43,6 +43,18 @@
       margin-top: 10px;
     }
   }
+  .country {
+    display: flex;
+    align-items: center;
+    line-height: initial;
+    .country-flag {
+      width: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 7px;
+    }
+  }
 }
 // Category section
 .category {
