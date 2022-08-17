@@ -1863,34 +1863,60 @@ nav .mobile-navigation-wrapp .navigation-list li .nav-m-icon {
   opacity: 0.4;
   margin-right: 10px;
 }
-nav .mobile-navigation-wrapp .main-label {
+nav .mobile-navigation-wrapp .lang-m-select {
   margin-left: 50px;
 }
-nav .mobile-navigation-wrapp .languages-container {
+nav .mobile-navigation-wrapp .lang-m-select .languages-container {
   display: flex;
   align-items: center;
-  justify-content: center;
   margin: 20px 0;
   gap: 30px;
 }
-nav .mobile-navigation-wrapp .languages-container .lang {
+nav .mobile-navigation-wrapp .lang-m-select .languages-container .lang {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-nav .mobile-navigation-wrapp .languages-container .lang .img-container {
+nav .mobile-navigation-wrapp .lang-m-select .languages-container .lang .img-container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 5px;
 }
-nav .mobile-navigation-wrapp .languages-container .lang .img-container img {
+nav .mobile-navigation-wrapp .lang-m-select .languages-container .lang .img-container img {
   width: 30px;
 }
-nav .mobile-navigation-wrapp .languages-container .lang .img-container.active {
+nav .mobile-navigation-wrapp .lang-m-select .languages-container .lang .img-container.active {
   border: 1px solid var(--clr-blue-100);
   border-radius: 50%;
   padding: 4px;
+}
+nav .mobile-navigation-wrapp .lang-m-select .sm-container {
+  display: none;
+}
+nav .mobile-navigation-wrapp .sm-m-select {
+  margin-left: 50px;
+}
+nav .mobile-navigation-wrapp .sm-m-select .sm-container {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  gap: 30px;
+}
+nav .mobile-navigation-wrapp .sm-m-select .sm-container .sm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+nav .mobile-navigation-wrapp .sm-m-select .sm-container .sm .sm-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--clr-blue-100);
+  border-radius: 50%;
+  margin-bottom: 5px;
 }
 
 *,
