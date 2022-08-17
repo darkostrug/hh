@@ -1,0 +1,106 @@
+// Navigation
+nav {
+  height: 70px;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
+  > ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @media (max-width: map-get($breakpoints, "sm")) {
+      display: none;
+    }
+  }
+  .lang-select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+    background-color: var(--clr-main-200);
+    gap: 4px;
+    border-radius: 16px;
+    .flag {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: rgb(43, 43, 43);
+    }
+    .chevron {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .burger-menu {
+    display: none;
+    @media (max-width: map-get($breakpoints, "sm")) {
+      display: initial;
+    }
+  }
+  .mobile-navigation-wrapp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: var(--clr-main-100);
+    padding: 20px;
+    transform: translateX(-100%);
+    &.active {
+      transform: translateX(0);
+      transition: 0.2s;
+    }
+    .headline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .navigation-list {
+      margin: 72px 0;
+      li {
+        &:not(:first-child) {
+          margin-top: 20px;
+        }
+        .nav-m-icon {
+          opacity: 0.4;
+          margin-right: 10px;
+        }
+      }
+    }
+    .main-label {
+      margin-left: 50px;
+    }
+    .languages-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0;
+      gap: 30px;
+      .lang {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .img-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 5px;
+          img {
+            width: 30px;
+          }
+          &.active {
+            border: 1px solid var(--clr-blue-100);
+            border-radius: 50%;
+            padding: 4px;
+          }
+        }
+      }
+    }
+  }
+}
