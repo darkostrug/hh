@@ -2156,6 +2156,97 @@ nav .mobile-navigation-wrapp .sm-m-select .sm-container .sm .sm-icon {
   justify-content: center;
 }
 
+.chose-city {
+  background-color: var(--clr-main-100);
+  max-width: 1024px;
+  border-radius: 10px;
+  padding: 70px 20px;
+}
+.chose-city .title {
+  text-align: center;
+}
+.chose-city .city-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+  gap: 10px;
+}
+.chose-city .city-container .card-container.selected {
+  padding: 5px;
+  border: 2px solid var(--clr-blue-100);
+  border-radius: 14px;
+}
+.chose-city .city-container .card-container.selected .city-card .check-icon {
+  background-color: var(--clr-main-100);
+}
+.chose-city .city-container .card-container.selected .city-card .check-icon > * {
+  opacity: 1;
+}
+.chose-city .city-container .city-card {
+  position: relative;
+  border-radius: 14px;
+}
+.chose-city .city-container .city-card > img {
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+}
+.chose-city .city-container .city-card p {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: var(--clr-main-100);
+  z-index: 1;
+}
+.chose-city .city-container .city-card .check-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--clr-main-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-blue-100);
+}
+.chose-city .city-container .city-card .check-icon > * {
+  opacity: 0;
+}
+.chose-city .city-container .city-card::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  opacity: 0.6;
+  border-radius: 10px;
+}
+.chose-city .city-card-title {
+  display: flex;
+  flex-direction: column;
+}
+.chose-city .city-card-title .country {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.chose-city .city-card-title .country > span {
+  display: flex;
+  align-items: center;
+  justify-content: centers;
+}
+.chose-city .city-card-title .country img {
+  width: 20px;
+  height: 20px;
+}
+
 *,
 *::before,
 *::after {
