@@ -1,0 +1,29 @@
+.toggle-button {
+  > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .toggle-container {
+    background-color: var(--clr-main-200);
+    border-radius: 30px;
+    height: 60px;
+    padding: 5px;
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &.active{
+        background-color: var(--clr-main-100);
+        border-radius: 30px;
+      }
+    }
+  }
+  .toggle-labels {
+    margin-top: 10px;
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

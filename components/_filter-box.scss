@@ -37,8 +37,9 @@
     position: relative;
     right: -23px;
     color: var(--clr-main-100);
-    i{
-        font-size: 40px;
+    cursor: pointer;
+    i {
+      font-size: 40px;
     }
   }
   @media (max-width: map-get($breakpoints, "lg")) {

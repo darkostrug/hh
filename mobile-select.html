@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homenhancement - Mobile select</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="test-bg">
+    <div class="mobile-select-popup">
+        <div class="ms-headline">
+            <h3 class="fw-bold fs-700 light-txt">Your stay</h3>
+            <div class="close-btn"><i class='bx bx-x'></i></div>
+        </div>
+        <div class="ms-chose-city">
+            <h2 class="title fs-1100 fw-semibold mb-100">Choose city</h2>
+            <div class="city-container">
+                <div class="card-container selected">
+                    <div class="city-card">
+                        <img src="./assets/img/geneva.png" alt="">
+                        <p class="fw-extrabold fs-800">Geneva</p>
+                        <div class="check-icon"><i class='bx bx-check fs-900'></i></div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="city-card">
+                        <img src="./assets/img/geneva.png" alt="">
+                        <p class="fw-extrabold fs-800">Geneva</p>
+                        <div class="check-icon"><i class='bx bx-check fs-900'></i></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="separator-line"></div>
+        <h2 class="title fs-1100 fw-semibold mb-100">Select dates</h2>
+        <!-- Toggle component -->
+        <div class="toggle-button">
+            <div class="toggle-container">
+                <div class="active"><span class="fw-semibold fs-800">Long stay</span></div>
+                <div class=""><span class="fw-semibold fs-800">Short stay</span></div>
+            </div>
+            <div class="toggle-labels">
+                <div><span class="fs-400">More then 28 nights</span></div>
+                <div><span class="fs-400 light-txt">Less then 28 nights</span></div>
+            </div>
+        </div>
+        <div class="select-dates-mobile-container">
+            <ul role="list">
+                <li class="selected">
+                    <span class="calendar-icon light-txt"><i class='bx bx-calendar fs-900'></i></span>
+                    <span class="fw-extrabold">May<span class="fw-semibold"> 2022</span></span>
+                </li>
+                <li>
+                    <span class="calendar-icon light-txt"><i class='bx bx-calendar fs-900'></i></span>
+                    <span class="fw-extrabold">May<span class="fw-semibold"> 2022</span></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

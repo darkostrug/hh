@@ -1,0 +1,133 @@
+.mobile-select-popup {
+  height: 100%;
+  width: 100%;
+  max-width: 480px;
+  background-color: var(--clr-main-100);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  .title {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .ms-headline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .close-btn {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: var(--clr-main-500);
+      color: var(--clr-main-100);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+  .city-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    gap: 10px;
+    .card-container {
+      &.selected {
+        padding: 5px;
+        border: 2px solid var(--clr-blue-100);
+        border-radius: 14px;
+        .city-card {
+          .check-icon {
+            background-color: var(--clr-main-100);
+            > * {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    .city-card {
+      position: relative;
+      border-radius: 14px;
+      img {
+        border-radius: 10px;
+        aspect-ratio: 16 / 9;
+      }
+      p {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: var(--clr-main-100);
+        z-index: 1;
+      }
+      .check-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid var(--clr-main-100);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--clr-blue-100);
+        > * {
+          opacity: 0;
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+        opacity: 0.6;
+        border-radius: 10px;
+      }
+    }
+  }
+  .select-dates-mobile-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+    li {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      border: 1px solid var(--clr-main-300);
+      height: 44px;
+      padding: 0 20px;
+      gap: 10px;
+      border-radius: 10px;
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+      &.selected {
+        border: 2px solid var(--clr-blue-100);
+      }
+    }
+  }
+  .calendar-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .separator-line{
+    width: 60%;
+    height: 3px;
+    background-color: var(--clr-main-300);
+    margin: 10px auto;
+    border-radius: 3px;
+  }
+  .toggle-button{
+    margin: 20px 0 40px;
+  }
+}
