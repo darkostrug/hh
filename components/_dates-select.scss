@@ -1,0 +1,39 @@
+.chose-date {
+  background-color: var(--clr-main-100);
+  max-width: 1024px;
+  border-radius: 10px;
+  padding: 70px 20px;
+  .toggle-button {
+    max-width: 430px;
+    margin: auto;
+  }
+  .separator-line {
+    width: 40%;
+    height: 2px;
+    background-color: var(--clr-main-300);
+    margin: 40px auto;
+    border-radius: 3px;
+  }
+  .title {
+    text-align: center;
+  }
+  .date-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--clr-main-300);
+    padding: 20px 0;
+    border-radius: 10px;
+    .calendar-icon {
+      margin-bottom: 20px;
+      font-size: 40px;
+      color: var(--clr-main-400);
+    }
+  }
+  .more-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 0;
+  }
+}

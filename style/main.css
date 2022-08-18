@@ -2119,7 +2119,7 @@ nav .mobile-navigation-wrapp .sm-m-select .sm-container .sm .sm-icon {
 }
 .mobile-select-popup .separator-line {
   width: 60%;
-  height: 3px;
+  height: 2px;
   background-color: var(--clr-main-300);
   margin: 10px auto;
   border-radius: 3px;
@@ -2245,6 +2245,46 @@ nav .mobile-navigation-wrapp .sm-m-select .sm-container .sm .sm-icon {
 .chose-city .city-card-title .country img {
   width: 20px;
   height: 20px;
+}
+
+.chose-date {
+  background-color: var(--clr-main-100);
+  max-width: 1024px;
+  border-radius: 10px;
+  padding: 70px 20px;
+}
+.chose-date .toggle-button {
+  max-width: 430px;
+  margin: auto;
+}
+.chose-date .separator-line {
+  width: 40%;
+  height: 2px;
+  background-color: var(--clr-main-300);
+  margin: 40px auto;
+  border-radius: 3px;
+}
+.chose-date .title {
+  text-align: center;
+}
+.chose-date .date-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--clr-main-300);
+  padding: 20px 0;
+  border-radius: 10px;
+}
+.chose-date .date-card .calendar-icon {
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: var(--clr-main-400);
+}
+.chose-date .more-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0 0;
 }
 
 *,
