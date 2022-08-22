@@ -475,6 +475,68 @@
     width: 100%;
   }
 }
+@media (min-width: 1400px) {
+  .col-1-xxl {
+    flex-grow: 0;
+    width: 8.3333333333%;
+  }
+  .col-2-xxl {
+    flex-grow: 0;
+    width: 16.6666666667%;
+  }
+  .col-3-xxl {
+    flex-grow: 0;
+    width: 25%;
+  }
+  .col-4-xxl {
+    flex-grow: 0;
+    width: 33.3333333333%;
+  }
+  .col-5-xxl {
+    flex-grow: 0;
+    width: 41.6666666667%;
+  }
+  .col-6-xxl {
+    flex-grow: 0;
+    width: 50%;
+  }
+  .col-7-xxl {
+    flex-grow: 0;
+    width: 58.3333333333%;
+  }
+  .col-8-xxl {
+    flex-grow: 0;
+    width: 66.6666666667%;
+  }
+  .col-9-xxl {
+    flex-grow: 0;
+    width: 75%;
+  }
+  .col-10-xxl {
+    flex-grow: 0;
+    width: 83.3333333333%;
+  }
+  .col-11-xxl {
+    flex-grow: 0;
+    width: 91.6666666667%;
+  }
+  .col-12-xxl {
+    flex-grow: 0;
+    width: 100%;
+  }
+  .col-13-xxl {
+    flex-grow: 0;
+    width: 108.3333333333%;
+  }
+  .col-14-xxl {
+    flex-grow: 0;
+    width: 116.6666666667%;
+  }
+  .col-15-xxl {
+    flex-grow: 0;
+    width: 125%;
+  }
+}
 .about-us-cards .card {
   border: 1px solid var(--clr-main-300);
   border-radius: 10px;
