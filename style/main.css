@@ -1824,6 +1824,11 @@ footer .border {
 
 nav {
   background-color: var(--clr-main-100);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0px 3px 10px rgba(160, 165, 170, 0.3);
 }
 nav .navigation-container {
   max-width: 1500px;
@@ -1893,6 +1898,7 @@ nav .mobile-navigation-wrapp {
   background-color: var(--clr-main-100);
   padding: 20px;
   transform: translateX(-100%);
+  overflow-y: scroll;
 }
 nav .mobile-navigation-wrapp.active {
   transform: translateX(0);
@@ -1905,6 +1911,12 @@ nav .mobile-navigation-wrapp .headline {
 }
 nav .mobile-navigation-wrapp .navigation-list {
   margin: 72px 0;
+}
+nav .mobile-navigation-wrapp .navigation-list ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }
 nav .mobile-navigation-wrapp .navigation-list li:not(:first-child) {
   margin-top: 20px;
