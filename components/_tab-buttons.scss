@@ -1,0 +1,13 @@
+.tab-buttons {
+  > button {
+    font-weight: 600;
+    &:not(.active) {
+      border: none;
+      background-color: transparent;
+      color: var(--clr-main-500);
+      &:hover {
+        color: var(--clr-blue-100);
+      }
+    }
+  }
+}

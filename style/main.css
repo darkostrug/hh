@@ -2513,6 +2513,18 @@ nav.home-nav .filter-box {
   }
 }
 
+.tab-buttons > button {
+  font-weight: 600;
+}
+.tab-buttons > button:not(.active) {
+  border: none;
+  background-color: transparent;
+  color: var(--clr-main-500);
+}
+.tab-buttons > button:not(.active):hover {
+  color: var(--clr-blue-100);
+}
+
 *,
 *::before,
 *::after {
