@@ -1,0 +1,26 @@
+.booking-confirm-wrapp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  .check-graph {
+    background-color: rgba(4, 160, 217, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px 0 40px;
+    i {
+      font-size: 100px;
+      color: var(--clr-blue-100);
+    }
+  }
+  p {
+    @media only screen and (max-width: 600px) {
+      font-size: 20px;
+    }
+  }
+}

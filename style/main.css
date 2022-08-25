@@ -1465,6 +1465,33 @@ main.apartment .apartment-offers .offer-card.offer-contanct-card .offer-icon {
   padding: 0 30px;
 }
 
+.booking-confirm-wrapp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.booking-confirm-wrapp .check-graph {
+  background-color: rgba(4, 160, 217, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 20px 0 40px;
+}
+.booking-confirm-wrapp .check-graph i {
+  font-size: 100px;
+  color: var(--clr-blue-100);
+}
+@media only screen and (max-width: 600px) {
+  .booking-confirm-wrapp p {
+    font-size: 20px;
+  }
+}
+
 .test-bg {
   background-color: #202020;
   padding: 25px;
