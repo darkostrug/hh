@@ -1,0 +1,31 @@
+.radial-btn-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 30px 0;
+  .radial-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .radial {
+      width: 25px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--clr-blue-100);
+      border-radius: 50%;
+      position: relative;
+      &.checked {
+        &::after {
+          content: "";
+          position: absolute;
+          width: 60%;
+          height: 60%;
+          background-color: var(--clr-blue-100);
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

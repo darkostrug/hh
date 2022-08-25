@@ -1,0 +1,141 @@
+.booking-form-main {
+  border: 1px solid var(--clr-blue-100);
+  border-radius: 10px;
+  padding: 3px;
+  .booking-container {
+    background: hsla(196, 96%, 43%, 0.5);
+    border-radius: 10px;
+    padding: 7px;
+  }
+  .booking-form {
+    background: var(--clr-main-100);
+    padding: 20px;
+    border-radius: 10px;
+    h2 {
+      margin-top: 10px;
+    }
+  }
+  .submit-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    .checkbox-field {
+      display: flex;
+      gap: 5px;
+      span {
+        display: flex;
+        gap: 5px;
+      }
+    }
+    .complete-booking {
+      margin-top: 10px;
+      max-width: 300px;
+      padding: 10px 20px;
+    }
+  }
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  input,
+  select {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--clr-main-400);
+    outline: none;
+    -webkit-appearance: none;
+  }
+  label {
+    margin-bottom: 7px;
+  }
+  textarea {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--clr-main-400);
+    outline: none;
+    resize: none;
+    min-height: 200px;
+  }
+}
+
+.apartment-booking-card {
+  border: 1px solid var(--clr-blue-100);
+  border-radius: 10px;
+  img {
+    border-radius: 10px !important;
+  }
+  .card-details {
+    padding: 0 20px;
+  }
+  .booking-price-details {
+    margin-bottom: 25px;
+    padding: 0 20px;
+    margin-top: 20px;
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3px 0;
+    }
+  }
+
+  .civil-liability {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    span {
+      display: flex;
+      align-items: center;
+    }
+    .icon {
+      width: 16px;
+      height: 16px;
+      justify-content: center;
+      background-color: rgba(4, 160, 217, 0.2);
+      border-radius: 50%;
+      margin-left: 5px;
+      margin-bottom: 2px;
+    }
+  }
+}
+.date-edit-box-wrapp {
+  margin-top: 20px;
+  padding: 0 20px;
+}
+.date-edit-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(4, 160, 217, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+  i {
+    font-size: 20px;
+    &.blue {
+      color: var(--clr-blue-100);
+    }
+  }
+}
+
+.total-price-wrapp {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: var(--clr-main-500);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: var(--clr-main-100);
+}
+
+.disclaimer {
+  margin-top: 10px;
+  display: flex;
+  text-align: center;
+  line-height: 1.25;
+  padding: 0 30px;
+}

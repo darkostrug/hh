@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homenhancement - Booking</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <main class="booking">
+        <section>
+            <div class="container">
+                <h2 class="title fs-900 fw-bold mb-100">Booking request</h2>
+                <div class="row gap-2">
+                    <div class=" col-12-xs col-8-lg">
+
+                        <div class="booking-form-main">
+                            <div class="booking-container">
+                                <div class="booking-form">
+                                    <h2 class="fw-bold fs-800">Is this corporate booking?</h2>
+                                    <div class="radial-btn-container">
+                                        <div class="radial-btn">
+                                            <span class="radial"></span>
+                                            <label for="" class="fs-400">Yes</label>
+                                        </div>
+                                        <div class="radial-btn">
+                                            <span class="radial checked"></span>
+                                            <label for="" class="fs-400">No, It's personal</label>
+                                        </div>
+                                    </div>
+                                    <div class="row gap-1">
+                                        <div class="form-field | col-12-xs col-6-md">
+                                            <label class="fs-400">Name</label>
+                                            <input type="text" placeholder="Type holder">
+                                        </div>
+                                        <div class="form-field | col-12-xs col-6-md">
+                                            <label class="fs-400">Surname</label>
+                                            <input type="text" placeholder="Type holder">
+                                        </div>
+                                        <div class="form-field | col-12-xs col-6-md">
+                                            <label class="fs-400">Email</label>
+                                            <input type="text" placeholder="Type holder">
+                                        </div>
+                                        <div class="form-field | col-12-xs col-6-md">
+                                            <label class="fs-400">Phone number</label>
+                                            <input type="text" placeholder="Type holder">
+                                        </div>
+                                        <div class="form-field | col-12-xs col-6-md">
+                                            <label class="fs-400">Number of guests</label>
+                                            <input type="text" placeholder="Type holder">
+                                        </div>
+                                        <div class="form-field | col-12-xs ">
+                                            <label class="fs-400">Origin Country</label>
+                                            <select name="" id="">
+                                                <option value="">Select</option>
+                                                <option value="">Select</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-field | col-12-xs col-6-md">
+                                            <label class="fs-400">Preffered language</label>
+                                            <select name="" id="">
+                                                <option value="">Select</option>
+                                                <option value="">Select</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-field | col-12-xs col-6-md">
+                                            <label class="fs-400">Preffered way to reach you</label>
+                                            <select name="" id="">
+                                                <option value="">Select</option>
+                                                <option value="">Select</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-field | col-12-xs">
+                                            <label class="fs-400">Your message</label>
+                                            <textarea placeholder="Type holder"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="submit-container">
+                                        <div class="checkbox-field fs-400">
+                                            <input type="checkbox" name="" id="">
+                                            <span>I agree with <a class="link" href="">General conditions</a></span>
+                                        </div>
+                                        <button class="complete-booking booking-btn fs-800 fw-bold">Complete
+                                            booking</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="apartment-card-wrapp col-12-xs col-4-lg">
+                        <div class="apartment-card apartment-booking-card">
+                            <div class="img-container">
+                                <img src="./assets/img/room.png" alt="">
+                                <span class="labels fs-100 fw-extrabold">Top rated</span>
+                                <span class="icon"><i class="bx bx-star"></i></span>
+                            </div>
+                            <div class="card-details">
+                                <h3 class="fw-semibold">One Bedroom, Eaux-Vives , Geneva</h3>
+                                <p class="details fs-400">
+                                    <span>56m</span>
+                                    <span class="separator-dot"></span>
+                                    <span>2-4 guests</span>
+                                    <span class="separator-dot"></span>
+                                    <span>4 beds</span>
+                                </p>
+                            </div>
+                            <div class="date-edit-box-wrapp">
+                                <div class="date-edit-box">
+                                    <span class="icon"><i class='bx bxs-calendar'></i></span>
+                                    <span class="icon fw-bold">Jul 10 - Jan 10</span>
+                                    <span class="icon"><i class='bx bxs-edit  blue'></i></span>
+                                </div>
+                            </div>
+                            <div class="booking-price-details">
+                                <p class="details fs-400 light-txt">
+                                    <span>Price details</span>
+                                </p>
+                                <p class="fs-400">
+                                    <span>13 Nights</span>
+                                    <span>789.50 CHF</span>
+                                </p>
+                                <p class="fs-400">
+                                    <span>Cleaning Fee</span>
+                                    <span>60 CHF</span>
+                                </p>
+                                <p class="fs-400">
+                                    <span>+ V.A.T. (3.7%)</span>
+                                    <span>60 CHF</span>
+                                </p>
+                            </div>
+                            <p class="civil-liability | fs-400">
+                                <span>Civil Liability (per guest)</span>
+                                <span>60 CHF <span class="icon"><i class='bx bx-question-mark'></i></span></span>
+                            </p>
+                            <div class="total-price-wrapp">
+                                <span class="fs-300 ">Total</span>
+                                <span class="fw-bold fs-800">1023 CHF</span>
+                            </div>
+                        </div>
+                        <span class=" disclaimer fs-200">You won't be charged until our agency checks booking request
+                            and confirm your stay</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
