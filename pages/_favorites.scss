@@ -1,0 +1,40 @@
+.favorites {
+  h2 {
+    margin-bottom: 30px;
+  }
+  .favorites-card-wrapp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    > .remove-icon {
+      @media only screen and (max-width: 720px) {
+        display: none;
+      }
+    }
+    border-bottom: 1px solid var(--clr-main-300);
+    &:last-child{
+        border-bottom: none;
+    }
+    &:not(:first-child){
+        margin-top: 10px;
+    }
+    @media only screen and (max-width: 720px) {
+        border-bottom: none;
+      }
+  }
+  .remove-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--clr-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    cursor: pointer;
+    color: var(--clr-main-100);
+    i {
+      font-size: 23px;
+    }
+  }
+}

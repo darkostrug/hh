@@ -1492,6 +1492,47 @@ main.apartment .apartment-offers .offer-card.offer-contanct-card .offer-icon {
   }
 }
 
+.favorites h2 {
+  margin-bottom: 30px;
+}
+.favorites .favorites-card-wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--clr-main-300);
+}
+@media only screen and (max-width: 720px) {
+  .favorites .favorites-card-wrapp > .remove-icon {
+    display: none;
+  }
+}
+.favorites .favorites-card-wrapp:last-child {
+  border-bottom: none;
+}
+.favorites .favorites-card-wrapp:not(:first-child) {
+  margin-top: 10px;
+}
+@media only screen and (max-width: 720px) {
+  .favorites .favorites-card-wrapp {
+    border-bottom: none;
+  }
+}
+.favorites .remove-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--clr-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  color: var(--clr-main-100);
+}
+.favorites .remove-icon i {
+  font-size: 23px;
+}
+
 .test-bg {
   background-color: #202020;
   padding: 25px;
@@ -1585,6 +1626,7 @@ main.apartment .apartment-offers .offer-card.offer-contanct-card .offer-icon {
 }
 .apartment-card-wrapp .apartment-card .img-container {
   margin-bottom: 10px;
+  position: relative;
 }
 .apartment-card-wrapp .apartment-card .img-container img {
   width: 100%;
@@ -1676,6 +1718,24 @@ main.apartment .apartment-offers .offer-card.offer-contanct-card .offer-icon {
 }
 .apartment-card-wrapp .apartment-card .card-price-details .label {
   opacity: 0.6;
+}
+.apartment-card-wrapp.fav-apartment-card .apartment-card {
+  display: flex;
+  gap: 20px;
+}
+@media only screen and (max-width: 720px) {
+  .apartment-card-wrapp.fav-apartment-card .apartment-card {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.apartment-card-wrapp.fav-apartment-card .apartment-card .img-container {
+  flex-basis: 300px;
+}
+@media only screen and (max-width: 720px) {
+  .apartment-card-wrapp.fav-apartment-card .apartment-card .img-container {
+    flex-basis: initial;
+  }
 }
 
 .buttons-container {

@@ -5,9 +5,10 @@
     position: relative;
     .img-container {
       margin-bottom: 10px;
+      position: relative;
       img {
         width: 100%;
-        aspect-ratio:  16 / 9;
+        aspect-ratio: 16 / 9;
         border-radius: 15px;
         object-fit: cover;
         &.small-img {
@@ -96,6 +97,22 @@
       }
       .label {
         opacity: 0.6;
+      }
+    }
+  }
+  &.fav-apartment-card {
+    .apartment-card {
+      display: flex;
+      gap: 20px;
+      @media only screen and (max-width: 720px) {
+        flex-direction: column;
+        gap: 0;
+      }
+      .img-container {
+        flex-basis: 300px;
+        @media only screen and (max-width: 720px) {
+          flex-basis: initial;
+        }
       }
     }
   }
